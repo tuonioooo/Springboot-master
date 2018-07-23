@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configuration status="WARN" monitorInterval="30">
+
+    <property name="instance" value="./logs"/>
+
+    <!-- 控制台输出 -->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8"> <!-- encoder 可以指定字符集，对于中文输出有意义 -->
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %msg[%logger]%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 日志输出到nosql中-->
+    <appender name="mongoAppender" class="com.master.log.MongoAppender">
+    </appender>
+
+    <!--日志名称-->
+
+    <Logger name="mongoAppender" level="debug"/> <!-- 默认 additivity="true"  向root传递  -->
+    <logger name="com.master" level="debug" /> <!-- 默认 additivity="true"  向root传递  -->
+    <root level="info">
+        <appender-ref ref="mongoAppender"/>
+        <appender-ref ref="stdout"/>
+    </root>
+
+</configuration>
