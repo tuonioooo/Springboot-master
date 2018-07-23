@@ -1,0 +1,80 @@
+springboot-apidoc：		spring boot 2.0.2整合apidoc
+
+springboot-freemarker： spring boot 2.0.2整合freemarker渲染视图
+
+springboot-thymeleaf：  spring boot 2.0.2整合thymeleaf渲染视图
+
+springboot-velocity：  spring boot 1.4.2整合velocity渲染视图
+
+springboot-jdbctemplate-2x：		spring boot 2.0.2整合jdbcTemplate
+
+springboot-jpa：		spring boot 2.0.2整合jpa
+
+springboot-jpa-datasource：		spring boot 2.0.2整合jpa的datasource多数据配置
+
+springboot-jpa-datasource-1.5.x：spring boot 1.5.x整合jpa的datasource多数据配置
+
+springboot-log4j：spring boot 1.3.7整合log4j，1.3.8以后就不支持log4j，升级为log4j2
+
+springboot-log4j-env：spring boot 1.3.7整合log4j多环境配置，1.3.8以后就不支持log4j，升级为log4j2
+
+springboot-log4j-2-x：spring boot 2.0.2整合log4j2
+
+springboot-log4j-2-x-env：spring boot 2.0.2整合log4j2多环境配置
+
+springboot-swagger：spring boot 2.0.2整合swagger构建api文档
+
+springboot-mail：spring boot 2.0.2整合mail 实现邮件发送：简单邮件、附件邮件、嵌入资源的邮件
+
+springboot-mail：spring boot 1.4.2实现邮件的模板发送，velocity Spring boot 1.4.2以后就不支持了
+
+springboot-statemachine：Spring StateMachine框架实现状态机
+
+springboot-scheduled：通过scheduled注解，创建定时任务
+
+springboot-flyway：flyway管理数据库版本
+
+springboot-feign：Spring Boot以及Feign使用Java 8中LocalDate等时间日期类的问题解决
+
+springboot-async：Spring Boot 2.0.3 中使用@Async实现异步调用、自定义线程池、优雅关闭、Future
+
+springboot-transactional：Spring Boot 2.0.3中使用事务控制业务逻辑的完整性
+
+springboot-redis：Spring Boot 2.0.2中使用redis做集中式缓存、整合cache、cache的相关注解使用、redis序列化讲解
+
+springboot-redis-1-5-x：Spring Boot 1.5.8中使用redis做集中式缓存、整合cache、cache的相关注解使用、redis序列化讲解
+
+springboot-ehcache：Spring Boot 1.5.4中使用ehcache做缓存以及ehcache的配置
+
+springboot-mongodb：Spring Boot 2.0.3中使用mongodb进行用户名密码连接和无权限连接、增删改测试操作、开启用户认证资料整理
+
+springboot-mongodb-datasouce：Spring Boot 2.0.3中使用mongodb进行多数据配置
+
+springboot-mongodb-logging-log4j：Spring Boot 2.0.3中使用org.apache.logging.log4j.Logger、slf4j实现方式 输出日志到mongodb和控制台
+
+springboot-mongodb-slf4j-logger： Spring Boot 2.0.3中使用org.slf4j.Logger 输出日志到mongodb和控制台
+
+springboot-mongodb-log4j2：Spring Boot 2.0.3中使用log4j2、slf4j输出日志到mongodb和控制台、自定义appender输出mongodb
+
+springboot-mongodb-log4j：Spring Boot 1.3.2中使用log4j整合AOP，输出日志到mongodb和控制台、自定义appender输出mongodb
+
+springboot-mongodb-logback：Spring Boot 2.0.3中使用logback整合AOP，输出日志到mongodb和控制台、自定义appender输出mongodb
+
+springboot-kafka：Spring Boot 1.5.7中集成kafka，简单的发送、接受消息
+
+springboot-config-kafka：Spring Boot 2.0.3中集成kafka,自定义配置kafka的实现，发送、接受消息
+
+springboot-rabbitmq：Spring Boot 2.0.3中集成rabbitmq发送、接受消息
+
+springboot-config-rabbitmq：springboot 2.0.3 自定义配置rabbitmq
+
+springboot-dubbo：Spring Boot 1.5.x(springboot-dubbo-client、springboot-dubbo-server)集成dubbo实现属性配置、集成dubbo实现XML配置（compute-service、consumer）对外服务调用和治理（基于zookeeper调用）
+
+springboot-solr-cloud: Spring Boot 2.0.3 集成solr cloud 7.0 ，实现数据索引的增删改查（各种实现方式）以及springboot版本差异性
+
+springboot-solr-cloud-1-5-x： springboot 1.5.x 集成solr cloud 7.0 实现数据索引的增删改查（各种实现方式）以及springboot版本差异性
+
+
+
+
+
