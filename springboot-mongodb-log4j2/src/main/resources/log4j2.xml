@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--日志级别以及优先级排序: OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE >ALL -->
+<!--Configuration后面的status，这个用于设置log4j2自身内部的信息输出，可以不设置，当设置成trace时，你会看到log4j2内部各种详细输出；可以设置成OFF(关闭)或Error(只输出错误信息)-->
+<!--monitorInterval：Log4j2能够自动检测修改配置文件和重新配置本身，设置间隔秒数-->
+<configuration status="WARN" monitorInterval="30">
+    <properties>
+        <!--
+        缺省配置（用于开发环境），配置日志文件输出目录和动态参数。其他环境需要在VM参数中指定；
+        “sys:”表示：如果VM参数中没指定这个变量值，则使用本文件中定义的缺省全局变量值
+        -->
+        <property name="instance">spring-boot-log</property>
+        <!-- 文件输出格式 -->
+        <property name="PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} |-%-5level [%thread] %c [%L] -| %msg%n</property>
+        <!-- 文件输出目录 -->
+        <property name="log.dir">./logs</property>
+
+    </properties>
+
+    <!--日志输出-->
+    <appenders>
+        <!--输出控制台的配置-->
+        <Console name="CONSOLE" target="system_out">
+            <PatternLayout pattern="${PATTERN}" />
+        </Console>
+
+        <!-- 日志输出到nosql中-->
+        <NoSql name="mongoAppender">
+            <MongoDb databaseName="logtest" collectionName="log4j2" server="192.168.127.131" port="27017"/>
+        </NoSql>
+
+    </appenders>
+
+
+
+    <!--日志名称-->
+    <loggers>
+        <Logger name="mongologger" level="debug"/> <!-- 默认 additivity="true"  向root传递  -->
+        <logger name="com.master" level="debug" /> <!-- 默认 additivity="true"  向root传递  -->
+        <root level="info">
+            <appender-ref ref="mongoAppender"/>
+            <appender-ref ref="CONSOLE"/>
+        </root>
+    </loggers>
+</configuration>
