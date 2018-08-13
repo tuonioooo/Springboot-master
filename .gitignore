@@ -67,3 +67,11 @@ springboot-rabbitmq/.idea/modules.xml
 springboot-rabbitmq/.idea/workspace.xml
 springboot-rabbitmq/springboot-rabbitmq.iml
 备注.txt
+springboot-mybatis/mvnw.cmd
+springboot-mybatis/mvnw
+springboot-mybatis/.mvn/wrapper/maven-wrapper.properties
+springboot-mybatis/.mvn/wrapper/maven-wrapper.jar
+springboot-mybatis/.mvn/wrapper/maven-wrapper.jar
+springboot-mybatis/.mvn/wrapper/maven-wrapper.jar
+springboot-mybatis/src/main/resources/templates/mybatis-config.xml
+springboot-mybatis/.mvn/wrapper/maven-wrapper.jar
