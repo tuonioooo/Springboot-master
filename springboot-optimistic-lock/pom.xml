@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.master</groupId>
+	<artifactId>springboot-optimistic-lock</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>springboot-optimistic-lock</name>
+	<description>基于数据库的乐观锁的实现方案</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.3.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.hacker.mybatis</groupId>
+				<artifactId>mybatis-third-generate</artifactId>
+				<version>1.0</version>
+				<configuration>
+					<!-- 输出目录(默认 System.getProperty(“user.dir”)) -->
+					<!--<outputDir>d:/mybatisplus</outputDir>-->
+					<!-- 是否覆盖同名文件(默认false) -->
+					<fileOverride>true</fileOverride>
+					<!-- mapper.xml 中添加二级缓存配置(默认true) -->
+					<enableCache>true</enableCache>
+					<!-- 开发者名称 -->
+					<author>tuonioooo</author>
+					<!-- 数据源配置，(必配) -->
+					<dataSource>
+						<driverName>com.mysql.jdbc.Driver</driverName>
+						<url>jdbc:mysql://127.0.0.1:3306/test0?useUnicode=true&amp;useSSL=false</url>
+						<username>root</username>
+						<password>root</password>
+					</dataSource>
+					<strategy>
+						<!-- 字段生成策略，四种类型，从名称就能看出来含义
+                        nochange(默认),
+                        underline_to_camel,
+                        remove_prefix,
+                        remove_prefix_and_camel -->
+						<naming>underline_to_camel</naming>
+						<!-- ID策略 是LONG还是STRING类型(默认stringtype)-->
+						<serviceIdType>longtype</serviceIdType>
+						<!--Entity中的ID生成策略（默认 id_worker）-->
+						<idGenType>auto</idGenType>
+						<!--自定义超类-->
+						<!--<superServiceClass>net.hyman.base.BaseService</superServiceClass>-->
+						<!-- 要包含的表 与exclude 二选一配置-->
+						<include>
+							<property>t_goods_info</property>
+							<!--<property>wp_terms</property>-->
+						</include>
+						<!-- 要排除的表 -->
+						<!--<exclude>-->
+						<!--<property>schema_version</property>-->
+						<!--<property>schema_version</property>-->
+						<!--</exclude>-->
+					</strategy>
+					<packageInfo>
+						<!-- 父级包名称，如果不写，下面的service等就需要写全包名(默认com.hacker) -->
+						<parent>com.master</parent>
+						<!--service包名(默认service)-->
+						<service>service</service>
+						<!--serviceImpl包名(默认service.impl)-->
+						<serviceImpl>service.impl</serviceImpl>
+						<!--entity包名(默认entity)-->
+						<entity>bean</entity>
+						<!--mapper包名(默认mapper)-->
+						<mapper>mapper</mapper>
+						<!--xml包名(默认mapper.xml)-->
+						<xml>mapper.xml</xml>
+						<!--controller包名(默认controller)-->
+						<controller>controller</controller>
+					</packageInfo>
+					<student>
+						<name>allen</name>
+						<age>28</age>
+					</student>
+					<!-- 模板引擎配置 -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
