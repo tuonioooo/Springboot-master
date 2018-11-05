@@ -23,7 +23,7 @@ public class SpringbootOptimisticLockApplicationTests {
 	@Autowired
 	private TgoodsinfoService tgoodsinfoService;
 
-	private Integer requestNum = 4;
+	private Integer requestNum = 8;
 
 	private CountDownLatch countDownLatch = new CountDownLatch(requestNum);
 
@@ -62,7 +62,7 @@ public class SpringbootOptimisticLockApplicationTests {
 			new Thread(()->{
 				try {
 					countDownLatch.await();
-					boolean result = tgoodsinfoService.updateGoodsAmout("10001", 8);
+					boolean result = tgoodsinfoService.updateGoodsAmout("10001", 1);
 					if(result){
 						Tgoodsinfo tgoodsinfo = tgoodsinfoService.get("10001");
 						logger.info("库存扣减成功"+ "，剩余库存" + tgoodsinfo.getAmout());
@@ -77,7 +77,7 @@ public class SpringbootOptimisticLockApplicationTests {
 		}
 
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
