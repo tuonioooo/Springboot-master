@@ -1,14 +1,12 @@
 package com.master.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 
 /**
  * Created by daizhao.
@@ -27,10 +25,9 @@ public class IndexController {
         return "index";
     }
 
-    @GetMapping("/process")
+    @PostMapping("/process")
     @ResponseBody
-    public String process(@RequestParam(name = "name") String name){
-        System.out.println("name = " + name);
+    public String process(){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");
         return simpleDateFormat.format(new Date());
     }
@@ -72,8 +69,34 @@ public class IndexController {
     }
 
 
+    @GetMapping("/toLongPoling")
+    public String toLongPoling(){
+        return "long_poling";
+    }
 
+    @PostMapping(value = "/needPrice", produces = "text/event-stream;charset=UTF-8")
+    @ResponseBody
+    public String needPrice(){
+        Random r = new Random();
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
+        return makeResp(r);
+    }
+
+    private String makeResp(Random r){
+        StringBuilder stringBuilder = new StringBuilder("");
+        stringBuilder.append("retry:10\n")
+                .append("data:")
+                .append(r.nextInt(100)+50+",")
+                .append(r.nextInt(40)+25)
+                .append("\n\n");
+        return stringBuilder.toString();
+
+    }
 
 
 }
