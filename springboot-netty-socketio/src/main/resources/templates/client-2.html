@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>netty-socketio测试之按钮回复事件</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <script src="http://libs.baidu.com/jquery/1.8.3/jquery.js"></script>
+    <script src="../static/socket.io-1.0.6.js"></script>
+    <script>
+        $(function(){
+            var socket =  io.connect('http://127.0.0.1:8884/?token=sdfsdfds3323243');
+            //监听名为asrInfoEvent的事件，这与服务端推送的那个事件名称必须一致
+            socket.on("notification", function(data){
+                console.log(data);
+
+            });
+            $("#emitButton").click(function() {
+                socket.emit("asrInfoEvent", "成功發送");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+<div id="display" style="height:50px;background-color:grey;">
+    x=<span id="x">0</span>, y=<span id="y">0</span>
+</div>
+<div>
+    <button id="emitButton">发送Point</button>
+</div>
+</body>
+</html>

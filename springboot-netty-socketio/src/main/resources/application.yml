@@ -1,0 +1,27 @@
+socket-io:
+  host: 127.0.0.1
+  port: 8884
+
+
+spring:
+  redisson:
+    type: single
+    single:
+      address: "redis://127.0.0.1:6379"
+      connectionMinimumIdleSize: 10
+      idleConnectionTimeout: 10000
+      pingTimeout: 1000
+      connectTimeout: 10000
+      timeout: 3000
+      retryAttempts: 3
+      retryInterval: 1500
+      password:
+      subscriptionsPerConnection: 5
+      clientName: null
+      subscriptionConnectionMinimumIdleSize: 1
+      subscriptionConnectionPoolSize: 50
+      connectionPoolSize: 64
+      database: 0
+      dnsMonitoring: false
+      dnsMonitoringInterval: 5000
+      codec: org.redisson.codec.JsonJacksonCodec
