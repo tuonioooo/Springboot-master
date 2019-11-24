@@ -1,0 +1,114 @@
+[2019-01-1614:53:48.167][main][INFO][org.springframework.test.context.support.AbstractTestContextBootstrapper][308]:Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.master.SpringbootShardingjdbcApplicationTests], using SpringBootContextLoader
+[2019-01-1614:53:48.194][main][INFO][org.springframework.test.context.support.AbstractContextLoader][264]:Could not detect default resource locations for test class [com.master.SpringbootShardingjdbcApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2019-01-1614:53:48.195][main][INFO][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils][83]:Could not detect default configuration classes for test class [com.master.SpringbootShardingjdbcApplicationTests]: SpringbootShardingjdbcApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2019-01-1614:53:48.636][main][INFO][org.springframework.boot.test.context.SpringBootTestContextBootstrapper][244]:Found @SpringBootConfiguration com.master.SpringbootShardingjdbcApplication for test class com.master.SpringbootShardingjdbcApplicationTests
+[2019-01-1614:53:49.177][main][INFO][org.springframework.test.context.support.AbstractTestContextBootstrapper][248]:Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[2019-01-1614:53:49.315][main][INFO][org.springframework.test.context.support.AbstractTestContextBootstrapper][177]:Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4b8d604b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e7cd6cc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@68c9d179, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@d554c5f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2dfaea86, org.springframework.test.context.transaction.TransactionalTestExecutionListener@15888343, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@33ecda92, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@14fc5f04, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e2829c7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3feb2dda, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6a8658ff, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1c742ed4]
+[2019-01-1614:53:51.943][main][INFO][org.springframework.boot.StartupInfoLogger][50]:Starting SpringbootShardingjdbcApplicationTests on DESKTOP-JJ6KV87 with PID 2352 (started by tony in E:\Github\Springboot-master\springboot-shardingjdbc)
+[2019-01-1614:53:51.945][main][DEBUG][org.springframework.boot.StartupInfoLogger][53]:Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[2019-01-1614:53:51.946][main][INFO][org.springframework.boot.SpringApplication][659]:No active profile set, falling back to default profiles: default
+[2019-01-1614:53:52.114][main][INFO][org.springframework.context.support.AbstractApplicationContext][590]:Refreshing org.springframework.web.context.support.GenericWebApplicationContext@68f4865: startup date [Wed Jan 16 14:53:52 CST 2019]; root of context hierarchy
+[2019-01-1614:53:56.803][main][INFO][com.zaxxer.hikari.HikariDataSource][110]:HikariPool-1 - Starting...
+[2019-01-1614:53:57.662][main][INFO][com.zaxxer.hikari.HikariDataSource][123]:HikariPool-1 - Start completed.
+[2019-01-1614:53:57.672][main][INFO][com.zaxxer.hikari.HikariDataSource][110]:HikariPool-2 - Starting...
+[2019-01-1614:53:57.678][main][INFO][com.zaxxer.hikari.HikariDataSource][123]:HikariPool-2 - Start completed.
+[2019-01-1614:53:58.586][main][INFO][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping][373]:Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-01-1614:53:59.183][main][INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter][574]:Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@68f4865: startup date [Wed Jan 16 14:53:52 CST 2019]; root of context hierarchy
+[2019-01-1614:54:03.402][main][INFO][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry][547]:Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2019-01-1614:54:03.406][main][INFO][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry][547]:Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2019-01-1614:54:03.493][main][INFO][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping][373]:Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-01-1614:54:03.494][main][INFO][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping][373]:Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-01-1614:54:04.194][main][INFO][org.quartz.impl.StdSchedulerFactory][1208]:Using default implementation for ThreadExecutor
+[2019-01-1614:54:04.244][main][INFO][org.quartz.core.SchedulerSignalerImpl][61]:Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-01-1614:54:04.245][main][INFO][org.quartz.core.QuartzScheduler][229]:Quartz Scheduler v.2.3.0 created.
+[2019-01-1614:54:04.246][main][INFO][org.quartz.simpl.RAMJobStore][155]:RAMJobStore initialized.
+[2019-01-1614:54:04.251][main][INFO][org.quartz.core.QuartzScheduler][294]:Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-01-1614:54:04.251][main][INFO][org.quartz.impl.StdSchedulerFactory][1362]:Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2019-01-1614:54:04.252][main][INFO][org.quartz.impl.StdSchedulerFactory][1366]:Quartz scheduler version: 2.3.0
+[2019-01-1614:54:04.252][main][INFO][org.quartz.core.QuartzScheduler][2287]:JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@60cf62ad
+[2019-01-1614:54:04.857][main][INFO][org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup][351]:Starting beans in phase 2147483647
+[2019-01-1614:54:04.858][main][INFO][org.springframework.scheduling.quartz.SchedulerFactoryBean][700]:Starting Quartz Scheduler now
+[2019-01-1614:54:04.859][main][INFO][org.quartz.core.QuartzScheduler][547]:Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2019-01-1614:54:04.875][main][INFO][org.springframework.boot.StartupInfoLogger][59]:Started SpringbootShardingjdbcApplicationTests in 15.132 seconds (JVM running for 22.644)
+[2019-01-1614:54:05.277][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:==>  Preparing: INSERT INTO t_order (order_id,user_id) VALUES (?,?) 
+[2019-01-1614:54:05.303][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:==> Parameters: 1(Integer), 1001(Integer)
+[2019-01-1614:54:05.822][Thread-2][INFO][org.springframework.context.support.AbstractApplicationContext][993]:Closing org.springframework.web.context.support.GenericWebApplicationContext@68f4865: startup date [Wed Jan 16 14:53:52 CST 2019]; root of context hierarchy
+[2019-01-1614:54:05.849][Thread-2][INFO][org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup][366]:Stopping beans in phase 2147483647
+[2019-01-1614:54:05.851][Thread-2][INFO][org.quartz.core.QuartzScheduler][585]:Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2019-01-1614:54:05.852][Thread-2][INFO][org.springframework.scheduling.quartz.SchedulerFactoryBean][824]:Shutting down Quartz Scheduler
+[2019-01-1614:54:05.852][Thread-2][INFO][org.quartz.core.QuartzScheduler][666]:Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[2019-01-1614:54:05.853][Thread-2][INFO][org.quartz.core.QuartzScheduler][585]:Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2019-01-1614:54:05.853][Thread-2][INFO][org.quartz.core.QuartzScheduler][740]:Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2019-01-1614:54:05.856][Thread-2][INFO][com.zaxxer.hikari.HikariDataSource][381]:HikariPool-1 - Shutdown initiated...
+[2019-01-1614:54:05.895][Thread-2][INFO][com.zaxxer.hikari.HikariDataSource][383]:HikariPool-1 - Shutdown completed.
+[2019-01-1614:54:05.896][Thread-2][INFO][com.zaxxer.hikari.HikariDataSource][381]:HikariPool-2 - Shutdown initiated...
+[2019-01-1614:54:05.933][Thread-2][INFO][com.zaxxer.hikari.HikariDataSource][383]:HikariPool-2 - Shutdown completed.
+[2019-01-1614:54:53.417][main][INFO][org.springframework.test.context.support.AbstractTestContextBootstrapper][308]:Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.master.SpringbootShardingjdbcApplicationTests], using SpringBootContextLoader
+[2019-01-1614:54:53.439][main][INFO][org.springframework.test.context.support.AbstractContextLoader][264]:Could not detect default resource locations for test class [com.master.SpringbootShardingjdbcApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[2019-01-1614:54:53.442][main][INFO][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils][83]:Could not detect default configuration classes for test class [com.master.SpringbootShardingjdbcApplicationTests]: SpringbootShardingjdbcApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2019-01-1614:54:53.671][main][INFO][org.springframework.boot.test.context.SpringBootTestContextBootstrapper][244]:Found @SpringBootConfiguration com.master.SpringbootShardingjdbcApplication for test class com.master.SpringbootShardingjdbcApplicationTests
+[2019-01-1614:54:53.855][main][INFO][org.springframework.test.context.support.AbstractTestContextBootstrapper][248]:Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[2019-01-1614:54:53.898][main][INFO][org.springframework.test.context.support.AbstractTestContextBootstrapper][177]:Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4b8d604b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e7cd6cc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@68c9d179, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@d554c5f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2dfaea86, org.springframework.test.context.transaction.TransactionalTestExecutionListener@15888343, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@33ecda92, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@14fc5f04, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e2829c7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3feb2dda, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6a8658ff, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1c742ed4]
+[2019-01-1614:54:54.515][main][INFO][org.springframework.boot.StartupInfoLogger][50]:Starting SpringbootShardingjdbcApplicationTests on DESKTOP-JJ6KV87 with PID 5980 (started by tony in E:\Github\Springboot-master\springboot-shardingjdbc)
+[2019-01-1614:54:54.517][main][DEBUG][org.springframework.boot.StartupInfoLogger][53]:Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+[2019-01-1614:54:54.520][main][INFO][org.springframework.boot.SpringApplication][659]:No active profile set, falling back to default profiles: default
+[2019-01-1614:54:54.617][main][INFO][org.springframework.context.support.AbstractApplicationContext][590]:Refreshing org.springframework.web.context.support.GenericWebApplicationContext@68f4865: startup date [Wed Jan 16 14:54:54 CST 2019]; root of context hierarchy
+[2019-01-1614:54:57.379][main][INFO][com.zaxxer.hikari.HikariDataSource][110]:HikariPool-1 - Starting...
+[2019-01-1614:54:57.681][main][INFO][com.zaxxer.hikari.HikariDataSource][123]:HikariPool-1 - Start completed.
+[2019-01-1614:54:57.691][main][INFO][com.zaxxer.hikari.HikariDataSource][110]:HikariPool-2 - Starting...
+[2019-01-1614:54:57.697][main][INFO][com.zaxxer.hikari.HikariDataSource][123]:HikariPool-2 - Start completed.
+[2019-01-1614:54:58.632][main][INFO][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping][373]:Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-01-1614:54:59.058][main][INFO][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter][574]:Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@68f4865: startup date [Wed Jan 16 14:54:54 CST 2019]; root of context hierarchy
+[2019-01-1614:54:59.219][main][INFO][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry][547]:Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2019-01-1614:54:59.222][main][INFO][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry][547]:Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2019-01-1614:54:59.395][main][INFO][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping][373]:Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-01-1614:54:59.396][main][INFO][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping][373]:Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-01-1614:55:00.042][main][INFO][org.quartz.impl.StdSchedulerFactory][1208]:Using default implementation for ThreadExecutor
+[2019-01-1614:55:00.070][main][INFO][org.quartz.core.SchedulerSignalerImpl][61]:Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-01-1614:55:00.070][main][INFO][org.quartz.core.QuartzScheduler][229]:Quartz Scheduler v.2.3.0 created.
+[2019-01-1614:55:00.072][main][INFO][org.quartz.simpl.RAMJobStore][155]:RAMJobStore initialized.
+[2019-01-1614:55:00.073][main][INFO][org.quartz.core.QuartzScheduler][294]:Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-01-1614:55:00.075][main][INFO][org.quartz.impl.StdSchedulerFactory][1362]:Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2019-01-1614:55:00.075][main][INFO][org.quartz.impl.StdSchedulerFactory][1366]:Quartz scheduler version: 2.3.0
+[2019-01-1614:55:00.075][main][INFO][org.quartz.core.QuartzScheduler][2287]:JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@51288417
+[2019-01-1614:55:00.494][main][INFO][org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup][351]:Starting beans in phase 2147483647
+[2019-01-1614:55:00.495][main][INFO][org.springframework.scheduling.quartz.SchedulerFactoryBean][700]:Starting Quartz Scheduler now
+[2019-01-1614:55:00.496][main][INFO][org.quartz.core.QuartzScheduler][547]:Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2019-01-1614:55:00.515][main][INFO][org.springframework.boot.StartupInfoLogger][59]:Started SpringbootShardingjdbcApplicationTests in 6.535 seconds (JVM running for 9.113)
+[2019-01-1614:55:00.812][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:==>  Preparing: INSERT INTO t_order (order_id,user_id) VALUES (?,?) 
+[2019-01-1614:55:00.840][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:==> Parameters: 1(Integer), 1001(Integer)
+[2019-01-1614:55:01.198][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:<==    Updates: 1
+[2019-01-1614:55:01.232][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:==>  Preparing: INSERT INTO t_order (order_id,user_id) VALUES (?,?) 
+[2019-01-1614:55:01.233][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:==> Parameters: 2(Integer), 2002(Integer)
+[2019-01-1614:55:01.269][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:<==    Updates: 1
+[2019-01-1614:55:01.320][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:==>  Preparing: INSERT INTO t_order (order_id,user_id) VALUES (?,?) 
+[2019-01-1614:55:01.321][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:==> Parameters: 3(Integer), 3003(Integer)
+[2019-01-1614:55:01.342][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:<==    Updates: 1
+[2019-01-1614:55:01.372][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:==>  Preparing: INSERT INTO t_order (order_id,user_id) VALUES (?,?) 
+[2019-01-1614:55:01.372][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:==> Parameters: 4(Integer), 4004(Integer)
+[2019-01-1614:55:01.426][main][DEBUG][org.apache.ibatis.logging.jdbc.BaseJdbcLogger][159]:<==    Updates: 1
+[2019-01-1614:55:01.515][Thread-2][INFO][org.springframework.context.support.AbstractApplicationContext][993]:Closing org.springframework.web.context.support.GenericWebApplicationContext@68f4865: startup date [Wed Jan 16 14:54:54 CST 2019]; root of context hierarchy
+[2019-01-1614:55:01.518][Thread-2][INFO][org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup][366]:Stopping beans in phase 2147483647
+[2019-01-1614:55:01.520][Thread-2][INFO][org.quartz.core.QuartzScheduler][585]:Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2019-01-1614:55:01.521][Thread-2][INFO][org.springframework.scheduling.quartz.SchedulerFactoryBean][824]:Shutting down Quartz Scheduler
+[2019-01-1614:55:01.521][Thread-2][INFO][org.quartz.core.QuartzScheduler][666]:Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[2019-01-1614:55:01.521][Thread-2][INFO][org.quartz.core.QuartzScheduler][585]:Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2019-01-1614:55:01.522][Thread-2][INFO][org.quartz.core.QuartzScheduler][740]:Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2019-01-1614:55:01.524][Thread-2][INFO][com.zaxxer.hikari.HikariDataSource][381]:HikariPool-1 - Shutdown initiated...
+[2019-01-1614:55:01.535][Thread-2][INFO][com.zaxxer.hikari.HikariDataSource][383]:HikariPool-1 - Shutdown completed.
+[2019-01-1614:55:01.535][Thread-2][INFO][com.zaxxer.hikari.HikariDataSource][381]:HikariPool-2 - Shutdown initiated...
+[2019-01-1614:55:01.541][Thread-2][INFO][com.zaxxer.hikari.HikariDataSource][383]:HikariPool-2 - Shutdown completed.

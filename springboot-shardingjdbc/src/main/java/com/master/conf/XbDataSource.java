@@ -43,7 +43,7 @@ public class XbDataSource {
         Map<String, DataSource> map = new HashMap<String, DataSource>();
         map.put("testdb0", primaryDataSource);
         map.put("testdb1", secondaryDataSource);
-        DataSourceRule dataSourceRule = new DataSourceRule(map);
+        DataSourceRule dataSourceRule = new DataSourceRule(map, "testdb0");
         List<TableRule> tableRuleList = new ArrayList<TableRule>();
         List<String> pList = new ArrayList<String>();
         for (int i = 0; i < 2; i++) {

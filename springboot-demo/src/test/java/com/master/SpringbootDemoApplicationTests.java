@@ -7,15 +7,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringbootEsApplicationTests {
+public class SpringbootDemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
-	}
-
-
-	public static void main(String[] args) {
-
 	}
 
 }
